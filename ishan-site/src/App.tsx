@@ -9,17 +9,17 @@ const Projects = lazy(() => import('./pages/Projects.tsx'));
 
 function App() {
   const [act, setAct] = useState(0);
+  const [language, setLanguage] = useState('en');
   return (
     <>
       <Router>
       <nav>
-        <TopBar active={act}></TopBar>
+        <TopBar active={act} language={language} changeLanguage={setLanguage}></TopBar>
       </nav>
 
-      {/* 2. Wrap routes inside Suspense to provide a fallback UI while loading */}
       <Suspense fallback={<div>Loading page...</div>}>
         <Routes>
-          <Route path="/" element={<Home setAct={setAct} />} />
+          <Route path="/" element={<Home setAct={setAct} lang={language} />} />
           <Route path="/About" element={<About setAct={setAct} />} />
           <Route path="/Projects" element={<Projects setAct={setAct} />} />
         </Routes>

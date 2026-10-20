@@ -1,3 +1,90 @@
-.active{
-    background-color: blueviolet;
+#topBar>.active{
+    background-color: #6029ff;
+}
+#topBar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #01017c;
+}
+#topBar>Link{
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #01017c;
+    color: #f1f1f1;
+    border-radius: 15px;
+    display: flex;
+}
+#topBar>#logoLink{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0;
+}
+.logo{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+#language{
+    margin-left: auto;
+    padding: 10px;
+    white-space: nowrap; /* Forces everything onto one line */
+}
+label{
+    color: #f1f1f1;
+}
+select{
+    background-color: #01017c;
+    padding: 0.675em 6em 0.675em 1em;
+    color: #f1f1f1;
+    border-radius: 15px;
+}
+.icon{
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+.lang-en{
+    font-family: var(--en-font), sans-serif;
+    font-weight: 500;
+}
+.lang-en #language select{
+    font-family: var(--en-font), sans-serif;
+    font-weight: 500;
+}
+.lang-bn{
+    font-family: var(--bn-font), sans-serif;
+    font-size: 1px;
+}
+.lang-bn #language select{
+    font-family: var(--bn-font), sans-serif;
+}
+.lang-hi{
+    font-family: var(--hi-font), sans-serif;
+}
+.lang-hi #language select{
+    font-family: var(--hi-font), sans-serif;
+}
+.lang-zh{
+    font-family: var(--zh-font), sans-serif;
+}
+.lang-zh #language select{
+    font-family: var(--zh-font), sans-serif;
+}
+.lang-es{
+    font-family: var(--es-font), sans-serif;
+}
+.lang-es #language select{
+    font-family: var(--es-font), sans-serif;
+}
+.lang-hi,
+.lang-zh,
+.lang-es,
+.lang-en,
+.lang-bn{
+    font-weight: 500;
 }

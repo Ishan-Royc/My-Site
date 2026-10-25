@@ -2,3 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --en-font: 'Roboto Condensed', sans-serif;
+    --bn-font: 'Noto Serif Bengali', serif;
+    --hi-font: 'Martel', serif;
+}
+
+a{
+    text-decoration: underline;
+    color: #2f2fea;
+}
+
+a::after{
+    color: #8345f6;
+}
+
+#body{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}

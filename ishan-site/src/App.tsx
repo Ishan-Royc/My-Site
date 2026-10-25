@@ -16,14 +16,15 @@ function App() {
       <nav>
         <TopBar active={act} language={language} changeLanguage={setLanguage}></TopBar>
       </nav>
-
-      <Suspense fallback={<div>Loading page...</div>}>
-        <Routes>
-          <Route path="/" element={<Home setAct={setAct} lang={language} />} />
-          <Route path="/About" element={<About setAct={setAct} />} />
-          <Route path="/Projects" element={<Projects setAct={setAct} />} />
-        </Routes>
-      </Suspense>
+      <div id="body">
+        <Suspense fallback={<div>Loading page...</div>}>
+          <Routes>
+            <Route path="/" element={<Home setAct={setAct} lang={language} />} />
+            <Route path="/About" element={<About setAct={setAct} lang={language} />} />
+            <Route path="/Projects" element={<Projects setAct={setAct} />} />
+          </Routes>
+        </Suspense>
+      </div>
     </Router>
     </>
   );

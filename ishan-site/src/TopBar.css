@@ -1,22 +1,33 @@
-#topBar>.active{
-    background-color: #6029ff;
-}
 #topBar{
     display: flex;
     align-items: center;
     width: 100%;
     background-color: #01017c;
 }
-#topBar>Link{
+#topBar>.topbar-link{
     padding: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
     cursor: pointer;
     font-size: 20px;
-    background-color: #01017c;
     color: #f1f1f1;
     border-radius: 15px;
     display: flex;
+    margin: 10px;
+    position: relative;
+    isolation: isolate;
+    text-decoration: none;
+}
+#topBar>.topbar-link>.topbar-link-label{
+    position: relative;
+    z-index: 1;
+}
+.topbar-active-indicator{
+    position: absolute;
+    inset: 0;
+    background-color: #3636ab;
+    border-radius: inherit;
+    z-index: -1;
 }
 #topBar>#logoLink{
     display: flex;
@@ -52,39 +63,29 @@ select{
     font-family: var(--en-font), sans-serif;
     font-weight: 500;
 }
-.lang-en #language select{
+.lang-en #lang select{
     font-family: var(--en-font), sans-serif;
     font-weight: 500;
 }
 .lang-bn{
     font-family: var(--bn-font), sans-serif;
-    font-size: 1px;
 }
-.lang-bn #language select{
+.lang-bn #lang select{
     font-family: var(--bn-font), sans-serif;
 }
 .lang-hi{
     font-family: var(--hi-font), sans-serif;
 }
-.lang-hi #language select{
+.lang-hi #lang select{
     font-family: var(--hi-font), sans-serif;
 }
-.lang-zh{
-    font-family: var(--zh-font), sans-serif;
-}
-.lang-zh #language select{
-    font-family: var(--zh-font), sans-serif;
-}
-.lang-es{
-    font-family: var(--es-font), sans-serif;
-}
-.lang-es #language select{
-    font-family: var(--es-font), sans-serif;
-}
 .lang-hi,
-.lang-zh,
-.lang-es,
 .lang-en,
 .lang-bn{
     font-weight: 500;
+}
+
+#spacing-language{
+    margin-left: 25px;
+    margin-right: 25px;
 }

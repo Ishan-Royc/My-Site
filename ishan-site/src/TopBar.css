@@ -26,6 +26,9 @@
     border-width: 1px;
     border-color: #f1f1f1;
 }
+#topBar>#active{
+    border-width: 0px;
+}
 #topBar>.topbar-link>.topbar-link-label{
     position: relative;
     z-index: 1;

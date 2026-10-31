@@ -48,19 +48,19 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                     alt="Home"
                 />
             </Link>
-            <Link to='/' aria-current={active === 0 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+            <Link to='/' aria-current={active === 0 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 0 ? 'active' : ''}>
                 <span className="topbar-link-label">{home}</span>
                 {active === 0 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/Projects' aria-current={active === 1 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+            <Link to='/Projects' aria-current={active === 1 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 1 ? 'active' : ''}>
                 <span className="topbar-link-label">{projects}</span>
                 {active === 1 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/Experience' aria-current={active === 2 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+            <Link to='/Experience' aria-current={active === 2 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 2 ? 'active' : ''}>
                 <span className="topbar-link-label">{experience}</span>
                 {active === 2 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/Credits' aria-current={active === 3 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+            <Link to='/Credits' aria-current={active === 3 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 3 ? 'active' : ''}>
                 <span className="topbar-link-label">{credits}</span>
                 {active === 3 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>

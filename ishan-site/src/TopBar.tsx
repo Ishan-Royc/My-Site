@@ -9,34 +9,45 @@ enum Language{
 }
 
 function TopBar({ active, language, changeLanguage }: { active: number, language: string, changeLanguage: (value:string) => void }) {
-    let home: string, about: string, projects: string;
+    let home: string, about: string, projects: string, experience: string;
 
     switch(language){
         case 'en':
             home = "Home";
             about = "About Me";
             projects = "Projects";
+            experience = "Experience";
             break;
         case 'hi':
             home = 'मूल पन्ना';
             about = 'मेरे बारे में';
-            projects = 'मेरे काज';
+            projects = 'मेरे किये गये काज';
+            experience = "बीतियाँ"
             break;
         case 'bn':
             home = 'মুখ্য পৃষ্ঠ';
             about = 'আমার ব্যাপারে';
-            projects = 'আমার কার্য';
+            projects = 'আমার করা কাজ';
+            experience = "অভিজ্ঞতা"
             break;
         default:
             home = 'Home';
             about = 'About';
             projects= 'Projects';
+            experience = 'Experience';
     }
 
     const languageLabel = Language[language as keyof typeof Language] ?? Language.en;
 
     return (<>
         <motion.div id="topBar" className={`lang-${language}`}>
+            <Link to="/">
+                <img
+                    className="logo"
+                    src="/old-but-gold-v0-uwp9flcax68g1.jpeg"
+                    alt="Home"
+                />
+            </Link>
             <Link to='/' aria-current={active === 0 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
                 <span className="topbar-link-label">{home}</span>
                 {active === 0 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
@@ -49,13 +60,21 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                 <span className="topbar-link-label">{projects}</span>
                 {active === 2 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <div id = "spacing-language" className="w-16 md:w-32 lg:w-48"></div>
-            <label htmlFor="lang">{languageLabel}: </label>
-            <select id="lang" name="lang" onChange={(event) => changeLanguage(event.target.value)}>
-                <option value="en">English</option>
-                <option value="hi">हिंदी</option>
-                <option value="bn">বাংলা</option>
-            </select>
+            <Link to='/Experience' aria-current={active === 3 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+                <span className="topbar-link-label">{experience}</span>
+                {active === 3 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
+            </Link>
+            <div className="flex justify-between w-full" id="languageSelector">
+                <div id="leftItem"></div>
+                <div className="ml-auto">
+                    <label htmlFor="lang">{languageLabel}: </label>
+                    <select id="lang" name="lang" onChange={(event) => changeLanguage(event.target.value)}>
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी</option>
+                        <option value="bn">বাংলা</option>
+                    </select>
+                </div>
+            </div>
         </motion.div>
     </>);
 }

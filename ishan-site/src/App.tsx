@@ -6,6 +6,7 @@ import TopBar from './TopBar'
 const Home = lazy(() => import('./pages/Home.tsx'));
 const About = lazy(() => import('./pages/About.tsx'));
 const Projects = lazy(() => import('./pages/Projects.tsx'));
+const Experience = lazy(() => import('./pages/Experience.tsx'));
 
 function App() {
   const [act, setAct] = useState(0);
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home setAct={setAct} lang={language} />} />
             <Route path="/About" element={<About setAct={setAct} lang={language} />} />
             <Route path="/Projects" element={<Projects setAct={setAct} />} />
+            <Route path="/Experience" element={<Experience setAct={setAct} lang={language} />} />
           </Routes>
         </Suspense>
       </div>

@@ -1,23 +1,25 @@
-#topBar{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #01017c;
-    padding-left: 5px;
+#topBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color: #01017c;
 }
 #topBar>.topbar-link{
-    padding: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 15px 8px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     color: #f1f1f1;
     border-radius: 15px;
     display: flex;
-    margin: 10px;
+    margin: 5px;
     position: relative;
     isolation: isolate;
     text-decoration: none;
+    white-space: nowrap;
 }
 #topBar>.topbar-link>.topbar-link-label{
     position: relative;
@@ -38,7 +40,7 @@
 }
 .logo{
     display: block;
-    width: 200px;
+    width: 120px;
     height: auto;
     border-radius: 15px;
 }
@@ -52,7 +54,7 @@ label{
 }
 select{
     background-color: #01017c;
-    padding: 0.675em 6em 0.675em 1em;
+    padding: 0.675em 1em;
     color: #f1f1f1;
     border-radius: 15px;
 }
@@ -92,10 +94,20 @@ select{
     margin-right: 25px;
 }
 
-#languageSelector{
-    padding-right: 3vw;
+#languageSelector {
+  width: auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 1rem;
+  border-left: 1px solid rgb(241 241 241 / 50%);
+  padding-left: 1rem;
 }
 
 span{
     white-space: nowrap;
+}
+
+#topBar > a,
+#languageSelector {
+  flex-shrink: 0;
 }

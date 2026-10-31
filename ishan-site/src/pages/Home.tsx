@@ -27,21 +27,24 @@ const sections: Record<string, string[]> = {
         'Education',
         'Employment',
         'Research',
-        'Skills'
+        'Skills',
+        'Contact Me'
     ],
     "hi":[
         'चिन्हवाई',
         'सिखावन',
         'नौकरी',
         'खोजें',
-        'पेशे'
+        'पेशे',
+        'मुझसे बात करने की जानकारी'
     ],
     "bn":[
         'পরিচয়',
         'শিক্ষা',
         'চাকরী',
         'Research',
-        'দক্ষতা'
+        'দক্ষতা',
+        'আমার সঙ্গে কথা বলুন'
     ]
 }
 
@@ -113,6 +116,20 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                 {extractSection(HomeMd, sections[lang][4])}
             </Markdown>
         </div>
+        <div id="contact" className="slide-in-element">
+            <h1 className="text-xl font-bold md:text-2xl">{sections[lang][5]}:</h1>
+            <div id='contact-links'>
+                <a href="https://github.com/Ishan-Royc" id="github">
+                    <img className="contact-img" alt="GitHub" src="/GitHub_Lockup_Black_Clearspace.svg" />
+                </a>
+                <a href="https://www.linkedin.com/in/ishan-roychowdhury-a65b76300/" id="linkedin">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <footer>
+            Copyright Ishan Roychowdhury 2026. No part of this site may be copied or distributed without the written consent of Ishan Roycowdhury. All rights reserved. The use of the GitHub logo does not in any way imply that I am affiliated with or endorsed by GitHub, or that any of my projects are endorsed by GitHub.
+        </footer>
     </div>);
 }
 

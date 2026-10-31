@@ -1,7 +1,7 @@
 # en
 ## Home
 ### Overview
-Hi, I'm Ishan. I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place.
+Hi, I'm Ishan. I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place. I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python. 
 
 ### Current Activities
 #### Education
@@ -29,12 +29,13 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 - [Google Fonts](https://fonts.google.com)
 - [HTML]()
 - [Godot]()
+- [Electron]()
 
 # hi
 ## मूल पन्ना
 
 ### चिन्हवाई
-Hi, I'm Ishan. I love helping people, and coding is my way of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place.
+नमस्ते, मैं ईशान हूँ। दूसरों की मदद करने में मुझे बहुत ख़ुशी मिलती है, और कोड करना मेरा एक तरीक़ा है यही करने का। चाहे मैं ऐप बनाऊँ जिससे खोज-काग़ज़ पढ़ना आसान हो जाये, या मैं नया ज़बानी मॉडेल बनाऊँ, या खोजकारों और राज-अगुओं के साथ काज करूँ ए.आय. और तकनीकी नेम बनाने के लिए, मैं चाहता हूँ कि मैं अपने ज्ञान का इस्तेमाल कर सकूँ जग को बेहतर करने के लिए और लोगों की भलाई को बढ़ावा देने के लिए। ज़्यादातर पेश-ओर को गाँठने में लगा रहता हूँ, मगर पस-ओर और पून-ढेर को भी गाँठा है मैंने, और मेज़-रू ऐप गाँठ में भी काज किया है पायथन और एलेक्ट्रॉन से।
 
 ### आज-कल का काम
 #### सिखावन
@@ -62,6 +63,7 @@ Hi, I'm Ishan. I love helping people, and coding is my way of doing that. Be it 
 - [Google Fonts/गूगल फ़ऑन्ट्स](https://fonts.google.com)
 - [HTML/एच.टी.एम.एल]()
 - [Godot/गडो]()
+- [Electron/एलेक्ट्रॉन]()
 
 # bn
 ## মুখ্য পৃষ্ঠ

@@ -8,6 +8,7 @@
     --en-font: 'Roboto Condensed', sans-serif;
     --bn-font: 'Noto Serif Bengali', serif;
     --hi-font: 'Martel', serif;
+    --linkedin-blue: oklch(60% .24 240);
 }
 
 a{

@@ -128,7 +128,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
             </div>
         </div>
         <footer>
-            Copyright Ishan Roychowdhury 2026. No part of this site may be copied or distributed without the written consent of Ishan Roycowdhury. All rights reserved. The use of the GitHub logo does not in any way imply that I am affiliated with or endorsed by GitHub, or that any of my projects are endorsed by GitHub.
+            Copyright Ishan Roychowdhury 2026. No part of this site may be copied or distributed without the written consent of Ishan Roycowdhury. All rights reserved. The use of any logos on this site does not imply endorsement from or affiliation with the owners of those logos. The copyright of those logos is reserved to their original owners.
         </footer>
     </div>);
 }

@@ -1,10 +1,25 @@
-import { useEffect } from 'react';
+import { Children, useEffect, useState, type ReactNode } from 'react';
 import Markdown from 'react-markdown';
 import HomeMd from './markdown/Home.md?raw';
 import extractSection from './scripts/parser.ts';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import './Home.css'
+
+function RandomizedSkillsList({ children }: { children?: ReactNode }) {
+  const [items] = useState(() => {
+    const shuffled = Children.toArray(children);
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+  });
+
+  return <ul className="skillz">{items}</ul>;
+}
 
 const sections: Record<string, string[]> = {
     "en":[
@@ -26,7 +41,7 @@ const sections: Record<string, string[]> = {
         'শিক্ষা',
         'চাকরী',
         'Research',
-        'Skills'
+        'দক্ষতা'
     ]
 }
 
@@ -92,9 +107,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                     li: ({ children }) =>(
                         <li className="skill">{children}</li>
                     ),
-                    ul: ({ children }) =>(
-                        <ul className="skillz">{children}</ul>
-                    )
+                    ul: RandomizedSkillsList
                 }}>
                 {extractSection(HomeMd, sections[lang][4])}
             </Markdown>

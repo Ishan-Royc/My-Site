@@ -28,6 +28,7 @@ I have used the following languages, libraries, tools, and frameworks in my proj
 - [Tailwind CSS]()
 - [Google Fonts](https://fonts.google.com)
 - [HTML]()
+- [Godot]()
 
 # hi
 ## मूल पन्ना
@@ -46,7 +47,7 @@ Hi, I'm Ishan. I love helping people, and coding is my way of doing that. Be it 
 अभी कुछ नहीं
 
 ### पेशे
-मैंने नीचे वाले औज़ारों को बरता है मेरे काजों में:
+मैंने इन औज़ारों को बरता है मेरे काजों में:
 - [React/रियैक्ट]()
 - [Motion/मोशन]()
 - [React Router/रियैक्ट राउटर]()
@@ -60,6 +61,7 @@ Hi, I'm Ishan. I love helping people, and coding is my way of doing that. Be it 
 - [Tailwind CSS/टेलविंड सी.एस.एस.]()
 - [Google Fonts/गूगल फ़ऑन्ट्स](https://fonts.google.com)
 - [HTML/एच.टी.एम.एल]()
+- [Godot/गडो]()
 
 # bn
 ## মুখ্য পৃষ্ঠ
@@ -69,4 +71,4 @@ Hi, I'm Ishan. I love helping people, and coding is my way of doing that. Be it 
 আমি ম্যাসাচুসেট্সের বিশ্বদ্যালয় এম্হার্স্টে গণক-জ্ঞান এবং সার্বজনিক-নীতি পড়ছি।
 #### চাকরী
 এখন কিছু নেই।
-#### 
+#### দক্ষতা

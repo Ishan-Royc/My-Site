@@ -11,7 +11,12 @@ Studying Computer Science and Public Policy at UMass Amherst.
 Nothing at the moment
 
 #### Research
-Nothing at the moment
+- Educational Reform: The Mississippi Miracle and How it Can be Applied to Massachusetts
+
+#### Projects
+- Darwin Neural Network
+- My Portfolio Website
+- Workspace Manager
 
 ### Skills
 I've used the following languages, libraries, tools, and frameworks in my projects:

@@ -2,17 +2,20 @@ import Markdown from 'react-markdown';
 import CreditsMd from './markdown/Credits.md?raw';
 import extractSection from './scripts/parser.ts';
 import { useEffect } from 'react';
+import Footer from './Footer.tsx';
 
 function Credits({lang, setAct}:{lang: string, setAct: (act: number) => void}){
     useEffect(() => {
         setAct(3);
     }, [setAct]);
     return (
-        <>
+        <div>
             <div id="credits">
                 <Markdown>{extractSection(CreditsMd, lang)}</Markdown>
             </div>
-        </>
+            <div className="filler"></div>
+            <Footer />
+        </div>
     )
 }
 

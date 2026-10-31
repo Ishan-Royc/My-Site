@@ -1,7 +1,7 @@
 import { lazy, Suspense, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import TopBar from './TopBar'
+import './App.css';
+import TopBar from './TopBar';
 
 const Home = lazy(() => import('./pages/Home.tsx'));
 const Projects = lazy(() => import('./pages/Projects.tsx'));

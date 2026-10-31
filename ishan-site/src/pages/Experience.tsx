@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Footer from './Footer.tsx';
 
 function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}){
     console.log(lang);
@@ -10,6 +11,7 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
                 <div id="work"></div>
                 <div id="research"></div>
                 <div id="volunteering"></div>
+                <div className="filler"></div><Footer />
             </>);
 }
 

@@ -37,6 +37,7 @@
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
 #current-activities{
@@ -64,6 +65,10 @@
 
 #research{
   background-color: green;
+}
+
+#projects{
+  background-color: rgb(107, 0, 107);
 }
 
 #workexp{
@@ -97,6 +102,7 @@
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #fbf1b6;
 }
 
 .skill:hover{

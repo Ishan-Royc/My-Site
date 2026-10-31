@@ -4,7 +4,7 @@ import HomeMd from './markdown/Home.md?raw';
 import extractSection from './scripts/parser.ts';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import Footer from '../Footer.tsx';
+import Footer from './Footer.tsx';
 import './Home.css'
 
 function RandomizedSkillsList({ children }: { children?: ReactNode }) {
@@ -41,7 +41,8 @@ const sections: Record<string, string[]> = {
         'Employment',
         'Research',
         'Skills',
-        'Contact Me'
+        'Contact Me',
+        'Projects'
     ],
     "hi":[
         'चिन्हवाई',
@@ -49,7 +50,8 @@ const sections: Record<string, string[]> = {
         'नौकरी',
         'खोजें',
         'पेशे',
-        'मुझसे बात करने की जानकारी'
+        'मुझसे बात करने की जानकारी',
+        ''
     ],
     "bn":[
         'পরিচয়',
@@ -57,7 +59,8 @@ const sections: Record<string, string[]> = {
         'চাকরী',
         'Research',
         'দক্ষতা',
-        'আমার সঙ্গে কথা বলুন'
+        'আমার সঙ্গে কথা বলুন',
+        ''
     ]
 }
 
@@ -111,6 +114,17 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                         >
                             <h1 className="text-xl font-bold md:text-2xl">{sections[lang][3]}: </h1>
                             <Markdown>{extractSection(HomeMd, sections[lang][3])}</Markdown>
+                        </motion.div>
+                    </Link>
+                    <Link to='/Projects'>
+                        <motion.div
+                            id="projects"
+                            className="activity"
+                            whileHover={{ scale: 1.04, boxShadow: '0 8px 20px rgba(0, 0, 0, 0.25)' }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                        >
+                            <h1 className="text-xl font-bold md:text-2xl">{sections[lang][6]}: </h1>
+                            <Markdown>{extractSection(HomeMd, sections[lang][6])}</Markdown>
                         </motion.div>
                     </Link>
                 </div>

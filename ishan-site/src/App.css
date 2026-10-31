@@ -24,11 +24,15 @@ a::after{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
-    background-color: #fbf1b6;
+    background-color: rgb(228, 228, 228);
 }
 
 footer{
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.filler{
+    height: 1000px;
 }

@@ -100,6 +100,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
         </div>
         <div id="skillz" className="slide-in-element">
             <Markdown
+                key={lang}
                 components={{
                     h2: ({ children }) => (
                     <h1 className="text-4xl font-bold md:text-5xl">{children}</h1>

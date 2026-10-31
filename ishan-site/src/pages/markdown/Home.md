@@ -14,7 +14,7 @@ Nothing at the moment
 Nothing at the moment
 
 ### Skills
-I have used the following languages, libraries, tools, and frameworks in my projects:
+I've used the following languages, libraries, tools, and frameworks in my projects:
 - [React]()
 - [Motion]()
 - [React Router]()

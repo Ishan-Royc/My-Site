@@ -20,6 +20,11 @@
     isolation: isolate;
     text-decoration: none;
     white-space: nowrap;
+    cursor: crosshair;
+}
+#topBar>.topbar-link:hover{
+    border-width: 1px;
+    border-color: #f1f1f1;
 }
 #topBar>.topbar-link>.topbar-link-label{
     position: relative;
@@ -43,6 +48,7 @@
     width: 120px;
     height: auto;
     border-radius: 15px;
+    cursor: crosshair;
 }
 #language{
     margin-left: auto;
@@ -51,12 +57,18 @@
 }
 label{
     color: #f1f1f1;
+    cursor: crosshair;
 }
 select{
     background-color: #01017c;
     padding: 0.675em 1em;
     color: #f1f1f1;
     border-radius: 15px;
+    cursor: crosshair;
+}
+select:hover{
+    border-width: 1px;
+    border-color: #f1f1f1;
 }
 .icon{
     width: 25px;

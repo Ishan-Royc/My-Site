@@ -48,6 +48,7 @@
 .activity{
   padding: 15px;
   border-radius: 15px;
+  cursor: crosshair;
 }
 
 #current-activities a {
@@ -56,7 +57,7 @@
 }
 
 #education{
-  background-color: blue;
+  background-color: rgb(107, 0, 107);
 }
 
 #employment{
@@ -64,11 +65,11 @@
 }
 
 #research{
-  background-color: green;
+  background-color: blue;
 }
 
 #projects{
-  background-color: rgb(107, 0, 107);
+  background-color: green;
 }
 
 #workexp{
@@ -103,6 +104,7 @@
   padding-left: 10px;
   padding-right: 10px;
   background-color: #fbf1b6;
+  cursor: crosshair;
 }
 
 .skill:hover{
@@ -111,6 +113,7 @@
 
 .skill > a {
   text-decoration: none;
+  cursor: crosshair;
 }
 
 #skillz{
@@ -123,6 +126,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: crosshair;
 }
 
 #contact-links{

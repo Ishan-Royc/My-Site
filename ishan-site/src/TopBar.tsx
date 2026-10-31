@@ -16,7 +16,7 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
             home = "Home";
             projects = "Projects";
             experience = "Experience";
-            credits = 'Credits';
+            credits = 'Credits and Attribution';
             break;
         case 'hi':
             home = 'मूल पन्ना';

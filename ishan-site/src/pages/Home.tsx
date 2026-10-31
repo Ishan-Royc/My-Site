@@ -22,9 +22,9 @@ const sections: Record<string, string[]> = {
         'पेशे'
     ],
     "bn":[
-        'Overview',
+        'পরিচয়',
         'শিক্ষা',
-        'Employment',
+        'চাকরী',
         'Research',
         'Skills'
     ]

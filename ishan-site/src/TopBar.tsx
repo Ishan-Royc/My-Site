@@ -9,32 +9,32 @@ enum Language{
 }
 
 function TopBar({ active, language, changeLanguage }: { active: number, language: string, changeLanguage: (value:string) => void }) {
-    let home: string, about: string, projects: string, experience: string;
+    let home: string, credits: string, projects: string, experience: string;
 
     switch(language){
         case 'en':
             home = "Home";
-            about = "About Me";
             projects = "Projects";
             experience = "Experience";
+            credits = 'Credits';
             break;
         case 'hi':
             home = 'मूल पन्ना';
-            about = 'मेरे बारे में';
             projects = 'मेरे किये गये काज';
-            experience = "बीतियाँ"
+            experience = "बीतियाँ";
+            credits = 'Credits';
             break;
         case 'bn':
             home = 'মুখ্য পৃষ্ঠ';
-            about = 'আমার ব্যাপারে';
             projects = 'আমার করা কাজ';
-            experience = "অভিজ্ঞতা"
+            experience = "অভিজ্ঞতা";
+            credits = 'Credits';
             break;
         default:
             home = 'Home';
-            about = 'About';
             projects= 'Projects';
             experience = 'Experience';
+            credits = 'Credits';
     }
 
     const languageLabel = Language[language as keyof typeof Language] ?? Language.en;
@@ -52,16 +52,16 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                 <span className="topbar-link-label">{home}</span>
                 {active === 0 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/About' aria-current={active === 1 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
-                <span className="topbar-link-label">{about}</span>
+            <Link to='/Projects' aria-current={active === 1 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+                <span className="topbar-link-label">{projects}</span>
                 {active === 1 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/Projects' aria-current={active === 2 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
-                <span className="topbar-link-label">{projects}</span>
+            <Link to='/Experience' aria-current={active === 2 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+                <span className="topbar-link-label">{experience}</span>
                 {active === 2 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
-            <Link to='/Experience' aria-current={active === 3 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
-                <span className="topbar-link-label">{experience}</span>
+            <Link to='/Credits' aria-current={active === 3 ? 'page' : undefined} className={`lang-${language} topbar-link`}>
+                <span className="topbar-link-label">{credits}</span>
                 {active === 3 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
             <div className="flex justify-between w-full" id="languageSelector">

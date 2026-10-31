@@ -22,6 +22,18 @@ function RandomizedSkillsList({ children }: { children?: ReactNode }) {
   return <ul className="skillz">{items}</ul>;
 }
 
+const titles: Record<string, string> = {
+    "en":"Hi, I'm Ishan",
+    "bn":"নমস্কার, আমি ঈশান",
+    "hi":"नमस्ते, मैं ईशान हूँ"
+}
+
+const up_to: Record<string, string> = {
+    "en":"What I'm up to right now:",
+    "hi":"अभी जो मैं कर रहा हूँ:",
+    "bn":"আমি যা এখন করছি:"
+}
+
 const sections: Record<string, string[]> = {
     "en":[
         'Overview',
@@ -55,6 +67,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
     }, [setAct]);
 
     return (<div id="HomePage">
+        <h1 className="text-4xl font-bold md:text-5xl" id='header'>{titles[lang]}</h1>
         <div id="re-me" className="slide-in-element">
             <Markdown
                 components={{
@@ -65,6 +78,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                 {extractSection(HomeMd, sections[lang][0])}
             </Markdown>
             <div id="current-activities">
+                <h1 className="text-2xl font-bold md:text-3xl" id="up-to">{up_to[lang]}</h1>
                 <Link to='/Experience#education'>
                     <motion.div
                         id="education"

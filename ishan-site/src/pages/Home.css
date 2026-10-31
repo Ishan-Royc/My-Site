@@ -165,3 +165,12 @@
   height: 1.5rem;
   object-fit: contain;
 }
+
+#header{
+  margin-bottom: 30px;
+}
+
+#up-to{
+  margin-bottom: 15px;
+  color: black;
+}

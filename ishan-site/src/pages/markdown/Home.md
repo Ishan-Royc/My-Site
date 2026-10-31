@@ -1,7 +1,7 @@
 # en
 ## Home
 ### Overview
-Hi, I'm Ishan. I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place. I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python. 
+I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place. I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python.
 
 ### Current Activities
 #### Education
@@ -15,21 +15,21 @@ Nothing at the moment
 
 ### Skills
 I've used the following languages, libraries, tools, and frameworks in my projects:
-- [React]()
+- ![React Logo](/React-icon.svg) [React]()
 - ![Motion Logo](/motion_logo.svg) [Motion]()
-- [React Router]()
-- [Typescript]()
+- ![React Router Logo](/rr_logo_light.svg) [React Router]()
+- ![Typescript Logo](/TS_logo.svg) [Typescript]()
 - ![JS Logo](/Js-logo.svg) [Javascript]()
-- [Python](https://python.org)
+- ![Python Logo](/Python-logo.svg) [Python](https://python.org)
 - ![Github Logo](/GitHub_Invertocat_Black.svg) [Github](https://github.com)
-- [React Markdown]()
+- ![[React] Markdown Logo](/Markdown-logo.svg) [React Markdown]()
 - ![Vite Logo](/Vite-logo.svg) [Vite]()
 - ![CSS Logo](/CSS3_logo.svg) [CSS]()
-- [Tailwind CSS]()
+- ![Tailwind CSS Logo](/Tailwind_CSS_Logo.svg) [Tailwind CSS]()
 - ![Google Fonts Logo](/Google_Fonts_logo.svg) [Google Fonts](https://fonts.google.com)
-- [HTML]()
-- [Godot]()
-- [Electron]()
+- ![HTML Logo](/HTML-logo.svg) [HTML]()
+- ![Godot Logo](/Godot_logo.svg) [Godot]()
+- ![Electron Logo](/Electron-Logo.svg) [Electron]()
 
 # hi
 ## मूल पन्ना

@@ -49,6 +49,12 @@
   padding: 15px;
   border-radius: 15px;
   cursor: crosshair;
+  border-width: 3px;
+  border-color: black;
+}
+
+.activity:hover{
+  border-width: 7px;
 }
 
 #current-activities a {
@@ -74,6 +80,7 @@
 
 #workexp{
   display: flex;
+  margin-top: 5px;
 }
 
 #workexp > a {
@@ -83,6 +90,8 @@
 
 #workexp .activity {
   flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #skillz{
@@ -126,7 +135,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: crosshair;
 }
 
 #contact-links{
@@ -154,6 +162,7 @@
   display: flex;
   align-items: center;
   margin: 20px;
+  cursor: crosshair;
 }
 
 #contact-links > a:hover{

@@ -22,9 +22,14 @@
     white-space: nowrap;
     cursor: crosshair;
 }
-#topBar>.topbar-link:hover{
-    border-width: 1px;
-    border-color: #f1f1f1;
+#topBar > .topbar-link,
+select {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+#topBar > .topbar-link:hover,
+select:hover {
+  border-color: #f1f1f1;
 }
 #topBar>#active{
     border-width: 0px;

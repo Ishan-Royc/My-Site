@@ -82,7 +82,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
             </Markdown>
             <div id="current-activities">
                 <h1 className="text-2xl font-bold md:text-3xl" id="up-to">{up_to[lang]}</h1>
-                <Link to='/Experience#education'>
+                <Link to='/Experience#education-xp'>
                     <motion.div
                         id="education"
                         className="activity"
@@ -94,7 +94,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                     </motion.div>
                 </Link>
                 <div id="workexp">
-                    <Link to='/Experience#work'>
+                    <Link to='/Experience#work-xp'>
                         <motion.div
                             id="employment"
                             className="activity"
@@ -105,7 +105,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                             <Markdown>{extractSection(HomeMd, sections[lang][2])}</Markdown>
                         </motion.div>
                     </Link>
-                    <Link to='/Experience#research'>
+                    <Link to='/Experience#research-xp'>
                         <motion.div
                             id="research"
                             className="activity"

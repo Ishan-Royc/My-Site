@@ -9,23 +9,6 @@
   font-size: 25px;
 }
 
-.slide-in-element {
-  animation: slideIn linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 #re-me{
   border-width: 5px;
   width: min(100%, 1500px);

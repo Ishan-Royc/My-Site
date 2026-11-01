@@ -1,0 +1,16 @@
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.xp-card{
+    border-width: 3px;
+    border-color: #8fb5ff;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

@@ -25,7 +25,7 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 - ![React Router Logo](/rr_logo_light.svg) [React Router]()
 - ![Typescript Logo](/TS_logo.svg) [Typescript]()
 - ![JS Logo](/Js-logo.svg) [Javascript]()
-- ![Python Logo](/Python-logo.svg) [Python](https://python.org)
+- ![Python Logo](/Python-logo.svg) [Python ®](https://python.org)
 - ![Github Logo](/GitHub_Invertocat_Black.svg) [Github](https://github.com)
 - ![[React] Markdown Logo](/Markdown-logo.svg) [React Markdown]()
 - ![Vite Logo](/Vite-logo.svg) [Vite]()

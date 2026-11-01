@@ -47,6 +47,12 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
     return (<>
                 <div id="education-xp">
                     <h1>Education</h1>
+                    {education[lang].map((title) => (
+                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                            <h2>{title}</h2>
+                            <Markdown>{extractSection(ExMd, title)}</Markdown>
+                        </article>
+                    ))}
                 </div>
                 <div id="work-xp">
                     <h1>Work Experience</h1>
@@ -62,6 +68,9 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
                 </div>
                 <div id="volunteering-xp">
                     <h1>Volunteering</h1>
+                </div>
+                <div id="awards-xp">
+                    <h1>Awards and Recognition</h1>
                 </div>
                 <div className="filler"></div><Footer />
             </>);

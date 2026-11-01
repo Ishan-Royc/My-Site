@@ -20,11 +20,11 @@
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 #current-activities{
-  color: white;
+  color: #eeeeee;
   margin-top: 15px;
 }
 
@@ -173,14 +173,15 @@
   color: black;
 }
 
-.text-en{
-  font-family: var(--en-font);
-}
+@media (max-width: 640px) {
+  #workexp {
+    flex-direction: column;
+  }
 
-.text-hi{
-  font-family: var(--hi-font);
-}
-
-.text-bn{
-  font-family: var(--bn-font);
+  #workexp > a {
+    flex: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
 }

@@ -3,12 +3,13 @@ import Markdown from 'react-markdown';
 import ExMd from './markdown/Experience.md?raw';
 import Footer from './Footer.tsx';
 import extractSection from './scripts/parser.ts';
+import { useLocation } from 'react-router-dom';
 import './Experience.css'
 
 const work: Record<string,string[]> = {
     "en":[
-        'Springfield Jewish Community Center',
-        'Summer 2027 Whatever'
+        'Summer 2027 Whatever',
+        'Springfield Jewish Community Center'
     ],
     "hi":[],
     "bn":[]
@@ -31,8 +32,18 @@ const volunteering: Record<string,string[]> = {
 
 const education: Record<string,string[]> = {
     "en":[
-        'Longmeadow High School',
-        'UMass Amherst'
+        'UMass Amherst',
+        'Longmeadow High School'
+    ],
+    "hi":[],
+    "bn":[]
+}
+
+const awards: Record<string,string[]> = {
+    "en":[
+        'National Latin Exam (NLE) Summa Cum Laude / Gold Medalist',
+        'John and Abigail Adams Scholarship',
+        'National Merit Scholarship Commended Student'
     ],
     "hi":[],
     "bn":[]
@@ -44,9 +55,21 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
         setAct(2);
     }, [setAct]);
 
-    return (<>
+    const location = useLocation();
+
+    useEffect(() => {
+        if (!location.hash) return;
+
+        const id = decodeURIComponent(location.hash.slice(1));
+        document.getElementById(id)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }, [location.pathname, location.hash]);
+
+    return (<div className={`experience-page text-${lang}`}>
                 <div id="education-xp">
-                    <h1>Education</h1>
+                    <h1 className="slide-in-element">Education</h1>
                     {education[lang].map((title) => (
                         <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
@@ -55,7 +78,7 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
                     ))}
                 </div>
                 <div id="work-xp">
-                    <h1>Work Experience</h1>
+                    <h1 className="slide-in-element">Work Experience</h1>
                     {work[lang].map((title) => (
                         <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
@@ -64,16 +87,22 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
                     ))}
                 </div>
                 <div id="research-xp">
-                    <h1>Research</h1>
+                    <h1 className="slide-in-element">Research</h1>
                 </div>
                 <div id="volunteering-xp">
-                    <h1>Volunteering</h1>
+                    <h1 className="slide-in-element">Volunteering</h1>
                 </div>
                 <div id="awards-xp">
-                    <h1>Awards and Recognition</h1>
+                    <h1 className="slide-in-element">Awards and Recognition</h1>
+                    {awards[lang].map((title) => (
+                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                            <h2>{title}</h2>
+                            <Markdown>{extractSection(ExMd, title)}</Markdown>
+                        </article>
+                    ))}
                 </div>
-                <div className="filler"></div><Footer />
-            </>);
+                <Footer />
+            </div>);
 }
 
 export default Experience;

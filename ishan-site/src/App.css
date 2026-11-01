@@ -23,7 +23,7 @@ a::after{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(200, 200, 200);
 }
 
 footer{
@@ -51,4 +51,20 @@ footer{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.text-en{
+  font-family: var(--en-font);
+}
+
+.text-hi{
+  font-family: var(--hi-font);
+}
+
+.text-bn{
+  font-family: var(--bn-font);
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -21,7 +21,7 @@ Nothing at the moment
 ### Skills
 I've used the following languages, libraries, tools, and frameworks in my projects:
 - ![React Logo](/React-icon.svg) [React]()
-- ![Motion Logo](/motion_logo.svg) [Motion]()
+- [Motion]()
 - ![React Router Logo](/rr_logo_light.svg) [React Router]()
 - ![Typescript Logo](/TS_logo.svg) [Typescript]()
 - ![JS Logo](/Js-logo.svg) [Javascript]()
@@ -35,6 +35,7 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 - ![HTML Logo](/HTML-logo.svg) [HTML]()
 - ![Godot Logo](/Godot_logo.svg) [Godot]()
 - ![Electron Logo](/Electron-Logo.svg) [Electron]()
+- ![NodeJS Logo]() [Node.js ®]()
 
 # hi
 ## मूल पन्ना

@@ -193,3 +193,15 @@
   margin-bottom: 15px;
   color: black;
 }
+
+.text-en{
+  font-family: var(--en-font);
+}
+
+.text-hi{
+  font-family: var(--hi-font);
+}
+
+.text-bn{
+  font-family: var(--bn-font);
+}

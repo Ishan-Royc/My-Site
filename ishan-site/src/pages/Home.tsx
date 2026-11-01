@@ -69,7 +69,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
         setAct(0);
     }, [setAct]);
 
-    return (<div id="HomePage">
+    return (<div id="HomePage" className={`text-${lang}`}>
         <h1 className="text-4xl font-bold md:text-5xl" id='header'>{titles[lang]}</h1>
         <div id="re-me" className="slide-in-element">
             <Markdown

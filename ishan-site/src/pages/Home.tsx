@@ -154,6 +154,9 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                 <a href="https://www.linkedin.com/in/ishan-roychowdhury-a65b76300/" id="linkedin">
                     LinkedIn
                 </a>
+                <a href="mailto:isroych@gmail.com" id="gmail">
+                    Email
+                </a>
             </div>
         </div>
         <Footer />

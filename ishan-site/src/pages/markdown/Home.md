@@ -31,7 +31,7 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 - ![Vite Logo](/Vite-logo.svg) [Vite]()
 - ![CSS Logo](/CSS3_logo.svg) [CSS]()
 - ![Tailwind CSS Logo](/Tailwind_CSS_Logo.svg) [Tailwind CSS]()
-- ![Google Fonts Logo](/Google_Fonts_logo.svg) [Google Fonts](https://fonts.google.com)
+- [Google Fonts](https://fonts.google.com)
 - ![HTML Logo](/HTML-logo.svg) [HTML]()
 - ![Godot Logo](/Godot_logo.svg) [Godot]()
 - ![Electron Logo](/Electron-Logo.svg) [Electron]()

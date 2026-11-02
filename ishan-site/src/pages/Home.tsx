@@ -140,7 +140,15 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                     li: ({ children }) =>(
                         <li className="skill">{children}</li>
                     ),
-                    ul: RandomizedSkillsList
+                    ul: RandomizedSkillsList,
+                    img: ({ src, alt, ...props }) => (
+                        <img
+                            {...props}
+                            src={src}
+                            alt={alt ?? ''}
+                            id={src === '/Cloudflare_Logo.svg' ? 'cf' : undefined}
+                        />
+                    )
                 }}>
                 {extractSection(HomeMd, sections[lang][4])}
             </Markdown>

@@ -152,7 +152,7 @@
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
-.skill:has(img) {
+.skill{
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -161,6 +161,12 @@
 .skill img {
   width: 1.5rem;
   height: 1.5rem;
+  object-fit: contain;
+}
+
+#cf{
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
 }
 

@@ -36,6 +36,7 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 - ![Godot Logo](/Godot_logo.svg) [Godot]()
 - ![Electron Logo](/Electron-Logo.svg) [Electron]()
 - ![NodeJS Logo](/Node-logo.svg) [Node.js ®](https://nodejs.org/en)
+- ![Cloudflare Logo](/Cloudflare_Logo.svg) [Cloudflare](https://www.cloudflare.com/)
 
 # hi
 ## मूल पन्ना

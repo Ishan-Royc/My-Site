@@ -98,21 +98,23 @@ Skills:
 
 ### पेशे
 मैंने इन औज़ारों को बरता है मेरे काजों में:
-- [React/रियैक्ट]()
+- ![React Logo](/React-icon.svg) [React/रियैक्ट]()
 - [Motion/मोशन]()
-- [React Router/रियैक्ट राउटर]()
-- [Typescript/टायपस्क्रिप्ट]()
-- [Javascript/जावास्क्रिप्ट]()
-- [Python/पायथन](https://python.org)
-- [Github/गिटहब](https://github.com)
-- [React Markdown/रियैक्ट मार्कडाउन]()
+- ![React Router Logo](/rr_logo_light.svg) [React Router/रियैक्ट राउटर]()
+- ![Typescript Logo](/TS_logo.svg) [Typescript/टाइपस्क्रिप्ट]()
+- ![JS Logo](/Js-logo.svg) [Javascript/जावास्क्रिप्ट]()
+- ![Python Logo](/Python-logo.svg) [Python/पाइथन ®](https://python.org)
+- ![Github Logo](/GitHub_Invertocat_Black.svg) [Github/गिट-हब](https://github.com)
+- ![[React] Markdown Logo](/Markdown-logo.svg) [React Markdown/रियैक्ट मार्कडाउन]()
 - ![Vite Logo](/Vite-logo.svg) [Vite/वीत]()
-- [CSS/सी.एस.एस.]()
-- [Tailwind CSS/टेलविंड सी.एस.एस.]()
+- ![CSS Logo](/CSS3_logo.svg) [CSS/सी.एस.एस.]()
+- ![Tailwind CSS Logo](/Tailwind_CSS_Logo.svg) [Tailwind CSS/टेलविंड सी.एस.एस.]()
 - [Google Fonts/गूगल फ़ऑन्ट्स](https://fonts.google.com)
-- [HTML/एच.टी.एम.एल]()
-- [Godot/गडो]()
-- [Electron/एलेक्ट्रॉन]()
+- ![HTML Logo](/HTML-logo.svg) [HTML/एच.टी.एम.एल]()
+- ![Godot Logo](/Godot_logo.svg) [Godot/गडो]()
+- ![Electron Logo](/Electron-Logo.svg) [Electron/एलेक्ट्रॉन]()
+- ![NodeJS Logo](/Node-logo.svg) [Node.js ®](https://nodejs.org/en)
+- ![Cloudflare Logo](/Cloudflare_Logo.svg) [Cloudflare](https://www.cloudflare.com/)
 
 # bn
 ## মুখ্য পৃষ্ঠ

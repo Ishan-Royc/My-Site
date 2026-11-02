@@ -24,7 +24,7 @@ const research: Record<string,string[]> = {
 const volunteering: Record<string,string[]> = {
     "en":[
         'Akshaya Patra',
-        'NARA'
+        'National Archives and Records Administration (NARA)'
     ],
     "hi":[],
     "bn":[]
@@ -43,7 +43,9 @@ const awards: Record<string,string[]> = {
     "en":[
         'National Latin Exam (NLE) Summa Cum Laude / Gold Medalist',
         'John and Abigail Adams Scholarship',
-        'National Merit Scholarship Commended Student'
+        'National Merit Scholarship Commended Student',
+        'Seal of Biliteracy With Distinction in Latin',
+        'Seal of Biliteracy in Hindi'
     ],
     "hi":[],
     "bn":[]

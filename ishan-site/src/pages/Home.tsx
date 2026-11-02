@@ -5,7 +5,8 @@ import extractSection from './scripts/parser.ts';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Footer from './Footer.tsx';
-import './Home.css'
+import './Home.css';
+import remarkGfm from 'remark-gfm';
 
 function RandomizedSkillsList({ children }: { children?: ReactNode }) {
   const [items] = useState(() => {
@@ -62,6 +63,17 @@ const sections: Record<string, string[]> = {
         'আমার সঙ্গে কথা বলুন',
         ''
     ]
+}
+
+const languages: Record<string,string[]> = {
+    "en":[
+        'English',
+        'Hindi',
+        'Bengali',
+        'Latin'
+    ],
+    "hi":[],
+    "bn":[]
 }
 
 function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
@@ -166,6 +178,15 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                     Send Me an Email
                 </a>
             </div>
+        </div>
+        <div id="language-xp">
+                    <h1 className="slide-in-element">Languages</h1>
+                    {languages[lang].map((title) => (
+                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                            <h2>{title}</h2>
+                            <Markdown remarkPlugins={[remarkGfm]}>{extractSection(HomeMd, title)}</Markdown>
+                        </article>
+                    ))}
         </div>
         <Footer />
     </div>);

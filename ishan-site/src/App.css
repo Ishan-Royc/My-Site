@@ -68,3 +68,12 @@ footer{
 html {
   scroll-behavior: smooth;
 }
+
+ h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}

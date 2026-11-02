@@ -1,6 +1,7 @@
 import { remark } from 'remark';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
+import remarkGfm from 'remark-gfm';
 
 /**
  * Extracts a markdown section by its heading text.
@@ -10,7 +11,7 @@ import remarkStringify from 'remark-stringify';
  */
 
 function extractSection(markdown: string, targetHeading: string) {
-    const processor = remark().use(remarkParse).use(remarkStringify);
+    const processor = remark().use(remarkParse).use(remarkStringify).use(remarkGfm);
     const ast = processor.parse(markdown);
     const children = ast.children;
     const normalizedTarget = targetHeading.trim().toLowerCase();

@@ -139,7 +139,7 @@
 }*/
 
 #contact-links > a{
-  padding: 10px;
+  padding: 15px;
   border-width: 2px;
   border-color: black;
   border-radius: 25px;
@@ -150,6 +150,10 @@
   align-items: center;
   margin: 20px;
   cursor: crosshair;
+}
+
+#contact-links > a > img{
+  width: 3rem;
 }
 
 #contact-links > a:hover{

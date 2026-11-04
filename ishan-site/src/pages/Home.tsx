@@ -179,13 +179,13 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
             <h1 className="text-xl font-bold md:text-2xl">{sections[lang][5]}:</h1>
             <div id='contact-links'>
                 <a href="https://github.com/Ishan-Royc" id="github">
-                    My GitHub Profile
+                    <img src="/GitHub_Invertocat_Black.svg" alt="GitHub" />
                 </a>
                 <a href="https://www.linkedin.com/in/ishan-roychowdhury-a65b76300/" id="linkedin">
-                    My LinkedIn Page
+                    <img src="/linkedin.svg" alt="LinkedIn" />
                 </a>
                 <a href="mailto:isroych@gmail.com" id="gmail">
-                    Send Me an Email
+                    <img src="/email.svg" alt="Email" />
                 </a>
             </div>
         </div>

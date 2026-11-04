@@ -45,20 +45,24 @@
   text-decoration: none;
 }
 
+.activity > p, .activity > ul > li {
+  font-size: 1.25rem;
+}
+
 #education{
-  background-color: rgb(107, 0, 107);
+  background-color: rgb(150, 49, 150);
 }
 
 #employment{
-  background-color: rgb(206, 1, 1);
+  background-color: rgb(222, 56, 56);
 }
 
 #research{
-  background-color: blue;
+  background-color: rgb(80, 80, 255);
 }
 
 #projects{
-  background-color: green;
+  background-color: rgb(53, 180, 53);
 }
 
 #workexp{
@@ -192,23 +196,6 @@
   
 }
 
-input[type="checkbox"] {
-  appearance: none;
-  width: 1em;
-  height: 1em;
-  margin-right: 0.4em;
-  border: 2px solid #2563eb;
-  border-radius: 3px;
-  background: white;
-  vertical-align: middle;
-  opacity: 1;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #2563eb;
-  box-shadow: inset 0 0 0 3px white;
-}
-
 #language-xp .xp-card{
     border-width: 3px;
     border-color: black;
@@ -218,4 +205,8 @@ input[type="checkbox"]:checked {
     padding: 20px;
     background-color: #eeeeee;
     width: min(70vw, 1500px);;
+}
+
+#HomePage .intro{
+    font-size: 5.5rem;
 }

@@ -5,7 +5,7 @@ I love helping people, and coding is one of my ways of doing that. Be it making 
 
 ### Current Activities
 #### Education
-Studying Computer Science and Public Policy at UMass Amherst.
+Computer Science and Public Policy at UMass Amherst.
 
 #### Employment
 Nothing at the moment
@@ -15,8 +15,6 @@ Nothing at the moment
 
 #### Projects
 - Darwin Neural Network
-- My Portfolio Website
-- Workspace Manager
 
 ### Skills
 I've used the following languages, libraries, tools, and frameworks in my projects:
@@ -42,38 +40,14 @@ I've used the following languages, libraries, tools, and frameworks in my projec
 #### English
 Proficiency: native
 
-Skills:
-- [x] Reading
-- [x] Writing
-- [x] Speaking
-- [x] Listening 
-
 #### Hindi
 Proficiency: native
-
-Skills:
-- [x] Reading
-- [x] Writing
-- [x] Speaking
-- [x] Listening 
 
 #### Bengali
 Proficiency: native
 
-Skills:
-- [x] Reading
-- [x] Writing
-- [x] Speaking
-- [x] Listening 
-
 #### Latin
 Proficiency: proficient/advanced
-
-Skills:
-- [x] Reading
-- [x] Writing
-- [x] Speaking
-- [ ] Listening
 
 # hi
 ## मूल पन्ना
@@ -116,12 +90,66 @@ Skills:
 - ![NodeJS Logo](/Node-logo.svg) [Node.js ®](https://nodejs.org/en)
 - ![Cloudflare Logo](/Cloudflare_Logo.svg) [Cloudflare](https://www.cloudflare.com/)
 
+### बोलियाँ
+#### अंग्रेज़ी
+क़ाबिलियत: मादरी
+
+#### हिंदी
+क़ाबिलियत: मादरी
+
+#### बंगाली
+क़ाबिलियत: मादरी
+
+#### लैटिन
+क़ाबिलियत: proficient/advanced
+
 # bn
 ## মুখ্য পৃষ্ঠ
 ### পরিচয়
+I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python.
+
+অন্যদের সাহায্য করাটি আমি ভালবাসি, এবং তা করার আমার এক ভাব হচ্ছে কোড করা। হক যে আমি গবেষণা-পত্র পড়াটিকে আসান করার জন্য এপ বানাই, বা গবেষণাকারীদের সঙ্গে কাজ করি এ.আই.এর ও প্রযক্তির ব্যাপারে [policy] বানাতে, নিজের গণক-বিজ্ঞানে জ্ঞানের ব্যাবহার করতে চাই দুনিয়াকে আরো ভাল করতে।
+
 ### আজ-কালের কাজ
 #### শিক্ষা
 আমি ম্যাসাচুসেট্সের বিশ্বদ্যালয় এম্হার্স্টে গণক-জ্ঞান এবং সার্বজনিক-নীতি পড়ছি।
 #### চাকরী
 এখন কিছু নেই।
 #### দক্ষতা
+
+### ভাষা
+#### ইংরেজি
+Proficiency: native
+
+Skills:
+- [x] Reading
+- [x] Writing
+- [x] Speaking
+- [x] Listening 
+
+#### হিন্দি
+Proficiency: native
+
+Skills:
+- [x] Reading
+- [x] Writing
+- [x] Speaking
+- [x] Listening 
+
+#### বাংলা
+Proficiency: native
+
+Skills:
+- [x] Reading
+- [x] Writing
+- [x] Speaking
+- [x] Listening 
+
+#### ল্যাটিন
+Proficiency: proficient/advanced
+
+Skills:
+- [x] Reading
+- [x] Writing
+- [x] Speaking
+- [ ] Listening

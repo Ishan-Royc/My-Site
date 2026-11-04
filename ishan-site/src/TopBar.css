@@ -1,3 +1,6 @@
+:root{
+    --topbar-blue: #01017c;
+}
 #topBar {
   display: flex;
   align-items: center;
@@ -6,7 +9,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  background-color: #01017c;
+  background-color: var(--topbar-blue);
 }
 #topBar>.topbar-link{
     padding: 15px 8px;
@@ -41,7 +44,7 @@ select:hover {
 .topbar-active-indicator{
     position: absolute;
     inset: 0;
-    background-color: #3636ab;
+    background-color: #4242c8;
     border-radius: inherit;
     z-index: -1;
 }
@@ -68,7 +71,7 @@ label{
     cursor: crosshair;
 }
 select{
-    background-color: #01017c;
+    background-color: var(--topbar-blue);
     padding: 0.675em 1em;
     color: #f1f1f1;
     border-radius: 15px;

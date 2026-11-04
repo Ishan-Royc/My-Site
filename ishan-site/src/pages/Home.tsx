@@ -72,8 +72,18 @@ const languages: Record<string,string[]> = {
         'Bengali',
         'Latin'
     ],
-    "hi":[],
-    "bn":[]
+    "hi":[
+        'अंग्रेज़ी',
+        'हिंदी',
+        'बंगाली',
+        'लैटिन'
+    ],
+    "bn":[
+        'ইংরেজি',
+        'হিন্দি',
+        'বাংলা',
+        'ল্যাটিন'
+    ]
 }
 
 function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
@@ -82,7 +92,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
     }, [setAct]);
 
     return (<div id="HomePage" className={`text-${lang}`}>
-        <h1 className="text-4xl font-bold md:text-5xl" id='header'>{titles[lang]}</h1>
+        <h1 className="intro font-bold" id='header'>{titles[lang]}</h1>
         <div id="re-me" className="slide-in-element">
             <Markdown
                 components={{

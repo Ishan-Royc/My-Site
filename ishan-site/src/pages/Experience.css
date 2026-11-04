@@ -12,3 +12,103 @@ footer{
     margin-top: 90px;
     margin-bottom: 0px;
 }
+
+.xp-card.ed {
+  position: relative;
+  isolation: isolate;
+}
+
+.xp-card.ed::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg-img/school.svg") center / contain no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.xp-card.ed > * {
+  position: relative;
+  z-index: 1;
+}
+
+.xp-card.arbeit {
+  position: relative;
+  isolation: isolate;
+}
+
+.xp-card.arbeit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg-img/work.svg") center / contain no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.xp-card.arbeit > * {
+  position: relative;
+  z-index: 1;
+}
+
+.xp-card.research {
+  position: relative;
+  isolation: isolate;
+}
+
+.xp-card.research::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg-img/research.svg") center / contain no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.xp-card.research > * {
+  position: relative;
+  z-index: 1;
+}
+
+.xp-card.volunteer {
+  position: relative;
+  isolation: isolate;
+}
+
+.xp-card.volunteer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg-img/volunteer.svg") center / contain no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.xp-card.volunteer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.xp-card.award {
+  position: relative;
+  isolation: isolate;
+}
+
+.xp-card.award::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg-img/award.svg") center / contain no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.xp-card.award > * {
+  position: relative;
+  z-index: 1;
+}

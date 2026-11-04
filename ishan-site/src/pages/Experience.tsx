@@ -70,46 +70,46 @@ function Experience({setAct, lang}:{setAct: (act: number) => void, lang: string}
     }, [location.pathname, location.hash]);
 
     return (<div className={`experience-page text-${lang}`}>
-                <div id="education-xp">
+                <div id="education-xp" className="xp">
                     <h1 className="slide-in-element">Education</h1>
                     {education[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                        <article className="xp-card slide-in-element ed" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
                             <Markdown>{extractSection(ExMd, title)}</Markdown>
                         </article>
                     ))}
                 </div>
-                <div id="work-xp">
+                <div id="work-xp" className="xp">
                     <h1 className="slide-in-element">Work Experience</h1>
                     {work[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                        <article className="xp-card slide-in-element arbeit" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
                             <Markdown>{extractSection(ExMd, title)}</Markdown>
                         </article>
                     ))}
                 </div>
-                <div id="research-xp">
+                <div id="research-xp" className="xp">
                     <h1 className="slide-in-element">Research</h1>
                     {research[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                        <article className="xp-card slide-in-element research" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
                             <Markdown>{extractSection(ExMd, title)}</Markdown>
                         </article>
                     ))}
                 </div>
-                <div id="volunteering-xp">
+                <div id="volunteering-xp" className="xp">
                     <h1 className="slide-in-element">Volunteering</h1>
                     {volunteering[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                        <article className="xp-card slide-in-element volunteer" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
                             <Markdown>{extractSection(ExMd, title)}</Markdown>
                         </article>
                     ))}
                 </div>
-                <div id="awards-xp">
+                <div id="awards-xp" className="xp">
                     <h1 className="slide-in-element">Awards and Recognition</h1>
                     {awards[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                        <article className="xp-card slide-in-element award" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>
                             <Markdown>{extractSection(ExMd, title)}</Markdown>
                         </article>

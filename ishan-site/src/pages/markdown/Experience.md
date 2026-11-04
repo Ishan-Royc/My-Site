@@ -56,6 +56,8 @@ Awarded for placing in the 75th percentile in my district on the grade 10 MCAS, 
 ### National Merit Scholarship Commended Student
 2025
 
+Awarded for scoring in the top 4% on the PSAT/NMSQT.
+
 ### Seal of Biliteracy With Distinction in Latin
 June 2025
 

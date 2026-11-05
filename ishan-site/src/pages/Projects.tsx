@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Footer from './Footer.tsx';
 
-function Projects({setAct}:{setAct: (act: number) => void}){
+function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     useEffect(() => {
         setAct(1);
     }, [setAct]);

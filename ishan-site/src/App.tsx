@@ -21,7 +21,7 @@ function App() {
         <Suspense fallback={<div>Loading page...</div>}>
           <Routes>
             <Route path="/" element={<Home setAct={setAct} lang={language} />} />
-            <Route path="/Projects" element={<Projects setAct={setAct} />} />
+            <Route path="/Projects" element={<Projects setAct={setAct} lang={language} />} />
             <Route path="/Experience" element={<Experience setAct={setAct} lang={language} />} />
             <Route path="/Credits" element={<Credits setAct={setAct} lang={language} />} />
           </Routes>

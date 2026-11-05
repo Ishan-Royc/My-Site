@@ -175,6 +175,15 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                 {extractSection(HomeMd, sections[lang][4])}
             </Markdown>
         </div>
+        <div id="language-xp">
+                    <h1 className="slide-in-element">Languages (the human kind)</h1>
+                    {languages[lang].map((title) => (
+                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
+                            <h2>{title}</h2>
+                            <Markdown remarkPlugins={[remarkGfm]}>{extractSection(HomeMd, title)}</Markdown>
+                        </article>
+                    ))}
+        </div>
         <div id="contact" className="slide-in-element">
             <h1 className="text-xl font-bold md:text-2xl">{sections[lang][5]}:</h1>
             <div id='contact-links'>
@@ -189,15 +198,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                 </a>
             </div>
         </div>
-        <div id="language-xp">
-                    <h1 className="slide-in-element">Languages (the human kind)</h1>
-                    {languages[lang].map((title) => (
-                        <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
-                            <h2>{title}</h2>
-                            <Markdown remarkPlugins={[remarkGfm]}>{extractSection(HomeMd, title)}</Markdown>
-                        </article>
-                    ))}
-        </div>
+        <br/>
         <Footer />
     </div>);
 }

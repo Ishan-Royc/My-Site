@@ -213,6 +213,10 @@
     width: min(70vw, 1500px);;
 }
 
+#language-xp{
+  margin-top: 50px;
+}
+
 #HomePage .intro{
     font-size: 5.5rem;
 }

@@ -6,7 +6,11 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
         setAct(1);
     }, [setAct]);
 
-    return (<><h1>Projects</h1><div className="filler"></div><Footer /></>);
+    return (<>
+                <h1>Projects</h1>
+                <div className="filler"></div>
+                <Footer />
+            </>);
 }
 
 export default Projects;

@@ -67,7 +67,7 @@
 
 #workexp{
   display: flex;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 #workexp > a {
@@ -213,4 +213,39 @@
 
 #HomePage .intro{
     font-size: 5.5rem;
+}
+
+.tooltip-trigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-trigger::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  
+  width: max-content;
+  max-width: 200px;
+  padding: 6px 10px;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: normal;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.tooltip-trigger:hover::after,
+.tooltip-trigger:focus-within::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }

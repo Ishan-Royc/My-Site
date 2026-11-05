@@ -7,6 +7,11 @@ June 2024 - August 2025
 
 Worked as a special needs inclusion counselor at the SJCC Summer Camp
 ### Summer 2027 Whatever
+location
+
+2027
+
+description
 
 ## Education
 ### UMass Amherst
@@ -30,14 +35,18 @@ GPA (Unweighted): 3.752/4.0
 
 ## Volunteering
 ### Akshaya Patra
+Longmeadow, MA; Springfield, MA
+
 June 2023, 2024, 2025
 
 Organized and ran a book stall at the annual picnic. Managed a team of 3-5 other people, including advertising for the picnic, book collection in our town, the logistics of getting the books to the picnic, and advertising the stall at the picnic. Raised ~$200 annually.
 
-### National Archives and Records Administration (NARA)
+### National Archives and Records Administration (NARA) Citizen Archivist
+Remote
+
 March 2025 - PRESENT
 
-Transcribed, tagged, and added context to hundreds of records in NARA's digital catalog; ~300 contributions to date across hundreds of documents.
+Transcribed, tagged, and added context to hundreds of records in NARA's digital catalog; ~300 contributions to the NARA catalog to date. Responsible for checking other Citizen Archivists' transcriptions as well, and correcting them as needed. 
 
 ## Research
 ### Spring 2027 Whatever

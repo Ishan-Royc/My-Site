@@ -178,19 +178,19 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
         <div id="contact" className="slide-in-element">
             <h1 className="text-xl font-bold md:text-2xl">{sections[lang][5]}:</h1>
             <div id='contact-links'>
-                <a href="https://github.com/Ishan-Royc" id="github">
+                <a href="https://github.com/Ishan-Royc" id="github" data-tooltip="GitHub" className="tooltip-trigger">
                     <img src="/GitHub_Invertocat_Black.svg" alt="GitHub" />
                 </a>
-                <a href="https://www.linkedin.com/in/ishan-roychowdhury-a65b76300/" id="linkedin">
+                <a href="https://www.linkedin.com/in/ishan-roychowdhury-a65b76300/" id="linkedin" data-tooltip="LinkedIn" className="tooltip-trigger">
                     <img src="/linkedin.svg" alt="LinkedIn" />
                 </a>
-                <a href="mailto:isroych@gmail.com" id="gmail">
+                <a href="mailto:isroych@gmail.com" id="gmail" data-tooltip="Email" className="tooltip-trigger">
                     <img src="/email.svg" alt="Email" />
                 </a>
             </div>
         </div>
         <div id="language-xp">
-                    <h1 className="slide-in-element">Languages</h1>
+                    <h1 className="slide-in-element">Languages (the human kind)</h1>
                     {languages[lang].map((title) => (
                         <article className="xp-card slide-in-element" key={title} id={title.replace(/\s+/g, '-').toLowerCase()}>
                             <h2>{title}</h2>

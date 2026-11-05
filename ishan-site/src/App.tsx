@@ -7,6 +7,7 @@ const Home = lazy(() => import('./pages/Home.tsx'));
 const Projects = lazy(() => import('./pages/Projects.tsx'));
 const Experience = lazy(() => import('./pages/Experience.tsx'));
 const Credits = lazy(() => import('./pages/Credits.tsx'));
+const About = lazy(() => import('./pages/About.tsx'));
 
 function App() {
   const [act, setAct] = useState(0);
@@ -24,6 +25,7 @@ function App() {
             <Route path="/Projects" element={<Projects setAct={setAct} lang={language} />} />
             <Route path="/Experience" element={<Experience setAct={setAct} lang={language} />} />
             <Route path="/Credits" element={<Credits setAct={setAct} lang={language} />} />
+            <Route path="/About" element={<About setAct={setAct} lang={language} />} />
           </Routes>
         </Suspense>
       </div>

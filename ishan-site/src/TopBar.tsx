@@ -64,6 +64,10 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                 <span className="topbar-link-label">{credits}</span>
                 {active === 3 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
+            <Link to='/About' aria-current={active === 4 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 4 ? 'active' : ''}>
+                <span className="topbar-link-label">About</span>
+                {active === 4 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
+            </Link>
             <div className="flex justify-between w-full" id="languageSelector">
                 <div id="leftItem"></div>
                 <div className="ml-auto">

@@ -5,6 +5,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     useEffect(() => {
         setAct(1);
     }, [setAct]);
+    console.log(lang);
 
     return (<>
                 <h1>Projects</h1>

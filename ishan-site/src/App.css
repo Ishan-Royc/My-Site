@@ -29,7 +29,7 @@ a::after{
 footer{
   font-size: 15px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .filler{
@@ -76,7 +76,4 @@ html {
 h1{
     font-size: 40px;
     font-weight: bold;
-}
-footer{
-  padding-bottom: 30px;
 }

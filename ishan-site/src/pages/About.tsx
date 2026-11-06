@@ -1,4 +1,5 @@
 import { useEffect} from 'react';
+import Footer from './Footer';
 
 function About({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     useEffect(() => {
@@ -8,6 +9,8 @@ function About({setAct, lang}:{setAct: (act: number) => void; lang: string}){
 
     return (<>
         <h1>About this Site</h1>
+        <div className="filler"></div>
+        <Footer />
     </>);
 }
 

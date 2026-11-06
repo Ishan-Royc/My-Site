@@ -9,7 +9,7 @@ enum Language{
 }
 
 function TopBar({ active, language, changeLanguage }: { active: number, language: string, changeLanguage: (value:string) => void }) {
-    let home: string, credits: string, projects: string, experience: string;
+    let home: string, credits: string, projects: string, experience: string, about: string;
 
     switch(language){
         case 'en':
@@ -17,24 +17,28 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
             projects = "Projects";
             experience = "Experience";
             credits = 'Credits and Attribution';
+            about = "About";
             break;
         case 'hi':
             home = 'मूल पन्ना';
             projects = 'मेरे किये गये काज';
             experience = "बीतियाँ";
             credits = 'Credits';
+            about = "इस जालीथान के बारे में";
             break;
         case 'bn':
             home = 'মুখ্য পৃষ্ঠ';
             projects = 'আমার করা কাজ';
             experience = "অভিজ্ঞতা";
             credits = 'Credits';
+            about = "এই সাইটের ব্যাপারে";
             break;
         default:
             home = 'Home';
             projects= 'Projects';
             experience = 'Experience';
             credits = 'Credits';
+            about = "About";
     }
 
     const languageLabel = Language[language as keyof typeof Language] ?? Language.en;
@@ -65,7 +69,7 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                 {active === 3 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
             <Link to='/About' aria-current={active === 4 ? 'page' : undefined} className={`lang-${language} topbar-link`} id={active === 4 ? 'active' : ''}>
-                <span className="topbar-link-label">About</span>
+                <span className="topbar-link-label">{about}</span>
                 {active === 4 && <motion.span className="topbar-active-indicator" layoutId="topbar-active-indicator" aria-hidden="true" transition={{ type: 'spring', stiffness: 500, damping: 35 }} />}
             </Link>
             <div className="flex justify-between w-full" id="languageSelector">

@@ -1,7 +1,7 @@
 # en
 ## Home
 ### Overview
-I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of language model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place. I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python.
+I love helping people, and coding is one of my ways of doing that. Be it making an app to make reading research papers easier, developing a new type of machine learning model, or working with researchers and politicians to formulate AI and tech policy, I want to use my computer science experience to make the world a better place. I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python.
 
 ### Current Activities
 #### Education
@@ -108,7 +108,7 @@ Proficiency: proficient/advanced
 ### পরিচয়
 I primarily work on frontend development, but I also have some experience with backend and fullstack development, as well as desktop app development in Electron and Python.
 
-অন্যদের সাহায্য করাতে আমি ভালবাসি, এবং তা করার আমার এক ভাব হচ্ছে কোড করা। ়আমি গবেষণা-পত্র পড়াটিকে আসান করার জন্য এপ বানাই, বা গবেষণাকারীদের সঙ্গে কাজ করি এ.আই.এর ও প্রযক্তির ব্যাপারে [policy] বানাতে, নিজের গণক-বিজ্ঞানে জ্ঞানের ব্যাবহার করতে চাই দুনিয়াকে আরো ভাল করতে।
+অন্যদের সাহায্য করাতে আমি ভালবাসি, এবং তা করার আমার এক ভাব হচ্ছে কোড করা। আমি গবেষণা-পত্র পড়াটিকে আসান করার জন্য এপ বানাই, বা গবেষণাকারীদের সঙ্গে কাজ করি এ.আই.এর ও প্রযক্তির ব্যাপারে [policy] বানাতে, নিজের গণক-বিজ্ঞানে জ্ঞানের ব্যাবহার করতে চাই দুনিয়াকে আরো ভাল করতে।
 
 ### আজ-কালের কাজ
 #### শিক্ষা

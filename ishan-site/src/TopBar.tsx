@@ -24,14 +24,14 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
             projects = 'मेरे किये गये काज';
             experience = "बीतियाँ";
             credits = 'Credits';
-            about = "इस जालीथान के बारे में";
+            about = "मेरे बारे में";
             break;
         case 'bn':
             home = 'মুখ্য পৃষ্ঠ';
             projects = 'আমার করা কাজ';
             experience = "অভিজ্ঞতা";
             credits = 'Credits';
-            about = "এই সাইটের ব্যাপারে";
+            about = "আমার ব্যাপারে";
             break;
         default:
             home = 'Home';

@@ -1,5 +1,8 @@
 import { useEffect} from 'react';
 import Footer from './Footer';
+import extractSection from './scripts/parser.ts';
+import Markdown from 'react-markdown';
+import AboutMd from './markdown/About.md?raw';
 
 function About({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     useEffect(() => {
@@ -8,7 +11,11 @@ function About({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     console.log(lang);
 
     return (<>
-        <h1>About this Site</h1>
+        <div className="about-content">
+            <Markdown>
+                {extractSection(AboutMd, lang)}
+            </Markdown>
+        </div>
         <div className="filler"></div>
         <Footer />
     </>);

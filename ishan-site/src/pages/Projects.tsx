@@ -45,7 +45,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                             a: ({ href, children }) => {
                                                 const tooltip = href?.includes('github.com')
                                                     ? 'GitHub'
-                                                    : 'Open';
+                                                    : 'Open in New Tab';
 
                                                 return (
                                                     <a
@@ -80,7 +80,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                             a: ({ href, children }) => {
                                                 const tooltip = href?.includes('github.com')
                                                     ? 'GitHub'
-                                                    : 'Open';
+                                                    : 'Open in New Tab';
 
                                                 return (
                                                     <a

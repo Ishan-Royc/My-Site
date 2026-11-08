@@ -46,7 +46,7 @@ Remote
 
 March 2025 - PRESENT
 
-Transcribed, tagged, and added context to hundreds of records in NARA's digital catalog; ~300 contributions to the NARA catalog to date. Responsible for checking other Citizen Archivists' transcriptions as well, and correcting them as needed. 
+Transcribed, tagged, and added context to hundreds of records in NARA's digital catalog; ~300 contributions to the NARA catalog to date. Responsible for checking other Citizen Archivists' transcriptions and tags as well, and correcting them as needed. This experience also helped me locate sources for my [Source Closet](/Projects) project.
 
 ## Research
 ### Spring 2027 Whatever

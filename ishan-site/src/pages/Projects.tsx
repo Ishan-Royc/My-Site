@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Children, isValidElement, useEffect } from 'react';
 import Footer from './Footer.tsx';
 import ProjectsMD from './markdown/Projects.md?raw';
 import extractSection from './scripts/parser.ts';
@@ -43,16 +43,21 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                     <Markdown
                                         components={{
                                             a: ({ href, children }) => {
-                                                const tooltip = href?.includes('github.com')
-                                                    ? 'GitHub'
-                                                    : 'Open in New Tab';
+                                                const isActionLink = Children.toArray(children).some(
+                                                    child => isValidElement(child) && child.type === 'img'
+                                                );
+
+                                                const tooltip = isActionLink
+                                                    ? (href?.includes('github.com') ? 'GitHub' : 'Open in New Tab')
+                                                    : undefined;
 
                                                 return (
                                                     <a
                                                         href={href}
-                                                        className={tooltip ? 'tooltip-trigger' : undefined}
+                                                        className={isActionLink ? 'project-action-link tooltip-trigger' : undefined}
                                                         data-tooltip={tooltip}
                                                         target="_blank"
+                                                        rel="noopener noreferrer"
                                                     >
                                                         {children}
                                                     </a>
@@ -78,16 +83,21 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                     <Markdown
                                         components={{
                                             a: ({ href, children }) => {
-                                                const tooltip = href?.includes('github.com')
-                                                    ? 'GitHub'
-                                                    : 'Open in New Tab';
+                                                const isActionLink = Children.toArray(children).some(
+                                                    child => isValidElement(child) && child.type === 'img'
+                                                );
+
+                                                const tooltip = isActionLink
+                                                    ? (href?.includes('github.com') ? 'GitHub' : 'Open in New Tab')
+                                                    : undefined;
 
                                                 return (
                                                     <a
                                                         href={href}
-                                                        className={tooltip ? 'tooltip-trigger' : undefined}
+                                                        className={isActionLink ? 'project-action-link tooltip-trigger' : undefined}
                                                         data-tooltip={tooltip}
                                                         target="_blank"
+                                                        rel="noopener noreferrer"
                                                     >
                                                         {children}
                                                     </a>
@@ -102,7 +112,6 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                         })}
                     </div>
                 </div>
-                <div className="filler"></div>
                 <Footer />
             </>);
 }

@@ -32,6 +32,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
 
     return (<>
                 <h1>Projects</h1>
+                <br/>
                 <div id="made" className="slide-in-element projects">
                     <h2>Projects that I've made</h2>
                     <div>
@@ -51,6 +52,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                                         href={href}
                                                         className={tooltip ? 'tooltip-trigger' : undefined}
                                                         data-tooltip={tooltip}
+                                                        target="_blank"
                                                     >
                                                         {children}
                                                     </a>
@@ -65,6 +67,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                         })}
                     </div>
                 </div>
+                <br/>
                 <div id="contributed" className="slide-in-element projects">
                     <h2>Projects that I've contributed to</h2>
                     <div className="projects">
@@ -84,6 +87,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                                         href={href}
                                                         className={tooltip ? 'tooltip-trigger' : undefined}
                                                         data-tooltip={tooltip}
+                                                        target="_blank"
                                                     >
                                                         {children}
                                                     </a>

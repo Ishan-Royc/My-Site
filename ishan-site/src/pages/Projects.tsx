@@ -14,7 +14,7 @@ const headers: Record<string, string[]> = {
     "hi": [
         "काज",
         "मैंने जो काज बनाये हैं",
-        "मैं जिन काजों में शामिल था"
+        "मैं जिन काजों में शामिल हुआ हूँ"
     ],
     "bn": [
         "Projects",
@@ -25,9 +25,9 @@ const headers: Record<string, string[]> = {
 
 const projects: Record<string, string[]> = {
     "en": [
-        'Darwin Neural Network',
         'Portfolio Website',
-        'Project 3'
+        'Darwin Neural Network',
+        'Source Closet',
     ],
     "hi": [],
     "bn": []
@@ -61,14 +61,15 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                     <Markdown
                                         components={{
                                             a: ({ href, children }) => {
-                                                const isActionLink = Children.toArray(children).some(
-                                                    child => isValidElement(child) && child.type === 'img'
+                                                const image = Children.toArray(children).find(
+                                                    child => isValidElement<{ alt?: string }>(child) && child.type === 'img'
                                                 );
 
-                                                const tooltip = isActionLink
-                                                    ? (href?.includes('github.com') ? 'GitHub' : 'Open in New Tab')
+                                                const tooltip = isValidElement<{ alt?: string }>(image)
+                                                    ? image.props.alt
                                                     : undefined;
 
+                                                const isActionLink = Boolean(image);
                                                 return (
                                                     <a
                                                         href={href}
@@ -101,13 +102,15 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                                     <Markdown
                                         components={{
                                             a: ({ href, children }) => {
-                                                const isActionLink = Children.toArray(children).some(
-                                                    child => isValidElement(child) && child.type === 'img'
+                                                const image = Children.toArray(children).find(
+                                                    child => isValidElement<{ alt?: string }>(child) && child.type === 'img'
                                                 );
 
-                                                const tooltip = isActionLink
-                                                    ? (href?.includes('github.com') ? 'GitHub' : 'Open in New Tab')
+                                                const tooltip = isValidElement<{ alt?: string }>(image)
+                                                    ? image.props.alt
                                                     : undefined;
+
+                                                const isActionLink = Boolean(image);
 
                                                 return (
                                                     <a

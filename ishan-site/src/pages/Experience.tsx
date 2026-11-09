@@ -8,7 +8,7 @@ import './Experience.css'
 
 const work: Record<string,string[]> = {
     "en":[
-        'Summer 2027 Whatever',
+        //'Summer 2027',
         'Springfield Jewish Community Center'
     ],
     "hi":[],
@@ -16,7 +16,7 @@ const work: Record<string,string[]> = {
 }
 const research: Record<string,string[]> = {
     "en":[
-        'Spring 2027 Whatever'
+        'Spring 2027'
     ],
     "hi":[],
     "bn":[]

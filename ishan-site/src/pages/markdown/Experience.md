@@ -6,12 +6,12 @@ Springfield, MA
 June 2024 - August 2025
 
 Worked as a special needs inclusion counselor at the SJCC Summer Camp
-### Summer 2027 Whatever
+### Summer 2027
 location
 
 2027
 
-description
+I am currently seeking employment for the summer of 2027.
 
 ## Education
 ### UMass Amherst
@@ -49,7 +49,12 @@ March 2025 - PRESENT
 Transcribed, tagged, and added context to hundreds of records in NARA's digital catalog; ~300 contributions to the NARA catalog to date. Responsible for checking other Citizen Archivists' transcriptions and tags as well, and correcting them as needed. This experience also helped me locate sources for my [Source Closet](/Projects) project.
 
 ## Research
-### Spring 2027 Whatever
+### Spring 2027
+Amherst, MA
+
+Unkown, 2027
+
+I've spoken with a professor and he said that he is likely to have a research project going in the spring semester and that he would love to have me on his team, although it has not been confirmed what the project is.
 
 ## Awards and Recognition
 ### National Latin Exam (NLE) Summa Cum Laude / Gold Medalist

@@ -133,6 +133,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                         })}
                     </div>
                 </div>
+                <br/>
                 <Footer />
             </>);
 }

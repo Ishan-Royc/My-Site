@@ -5,6 +5,24 @@ import extractSection from './scripts/parser.ts';
 import Markdown from 'react-markdown';
 import './Projects.css';
 
+const headers: Record<string, string[]> = {
+    "en": [
+        "Projects",
+        "Projects that I've made",
+        "Projects that I've contributed to"
+    ],
+    "hi": [
+        "काज",
+        "मैंने जो काज बनाये हैं",
+        "मैं जिन काजों में शामिल था"
+    ],
+    "bn": [
+        "Projects",
+        "Projects that I've made",
+        "Projects that I've contributed to"
+    ]
+}
+
 const projects: Record<string, string[]> = {
     "en": [
         'Darwin Neural Network',
@@ -31,10 +49,10 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
     console.log(lang);
 
     return (<>
-                <h1>Projects</h1>
+                <h1>{headers[lang][0]}</h1>
                 <br/>
                 <div id="made" className="slide-in-element projects">
-                    <h2>Projects that I've made</h2>
+                    <h2>{headers[lang][1]}</h2>
                     <div>
                         {projects[lang].map((project, index) => {
                             return (
@@ -74,7 +92,7 @@ function Projects({setAct, lang}:{setAct: (act: number) => void; lang: string}){
                 </div>
                 <br/>
                 <div id="contributed" className="slide-in-element projects">
-                    <h2>Projects that I've contributed to</h2>
+                    <h2>{headers[lang][2]}</h2>
                     <div className="projects">
                         {contributedProjects[lang].map((project, index) => {
                             return (

@@ -18,7 +18,7 @@ function App() {
       <nav>
         <TopBar active={act} language={language} changeLanguage={setLanguage}></TopBar>
       </nav>
-      <div id="body">
+      <div id="body" className={`text-${language}`}>
         <Suspense fallback={<div>Loading page...</div>}>
           <Routes>
             <Route path="/" element={<Home setAct={setAct} lang={language} />} />

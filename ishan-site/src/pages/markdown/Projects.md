@@ -47,8 +47,19 @@ A website which hosts historical documents online for free public access, mostly
 
 [![Github (The version with a NodeJS backend)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet) [![Github (The version with a Python backend)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet-Python) [![Open in a New Tab](/open.svg)](https://source-closet.com)
 
-## Source Closet
-## Azumanga Clock App
+## Azumanger Clock App
+**October 2024**
+
+**Languages: GDScript**
+
+**Game Engine: Godot**
+
+**CI/CD: N/A**
+
+A simple desktop clock app that is based on the *Azumanga Daioh!* wristwatch. It sits on top of all the windows, and can be dragged around the screen to where the user wants it to be.
+
+[![Open on Itch.io](/itch-logo.svg)](https://ishanroyc.itch.io/azumanger-clock-app)
+
 ## John Brown Game
 ## Workspace Manager
 

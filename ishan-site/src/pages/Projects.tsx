@@ -28,6 +28,9 @@ const projects: Record<string, string[]> = {
         'Portfolio Website',
         'Darwin Neural Network',
         'Source Closet',
+        'Azumanger Clock App',
+        'Workspace Manager',
+        'John Brown Game'
     ],
     "hi": [],
     "bn": []

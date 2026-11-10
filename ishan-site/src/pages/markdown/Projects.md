@@ -45,7 +45,7 @@ My use of markdown keeps the TSX much more readable, and therefore maintainable,
 
 A website which hosts historical documents online for free public access, mostly as facsimiles and scans of the original documents. It was originally built with a Flask backend written in PYthon, but I then shifted to a NodeJS backend written using ExpressJS so as to unify the language and minimize the number of languages needed (and therefore the number of dependencies, libraries, etc.).
 
-[![Github (The version with a NodeJS backend)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet) [![Github (The version with a Python backend)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet-Python) [![Open in a New Tab](/open.svg)](https://source-closet.com)
+[![Github (NodeJS)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet) [![Github (Python)](/GitHub_Invertocat_Black.svg)](https://github.com/Ishan-Royc/Source-Closet-Python) [![Open in a New Tab](/open.svg)](https://source-closet.com)
 
 ## Azumanger Clock App
 **October 2024**

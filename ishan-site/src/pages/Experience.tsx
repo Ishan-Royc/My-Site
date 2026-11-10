@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Markdown from 'react-markdown';
 import ExMd from './markdown/Experience.md?raw';
-import Footer from './Footer.tsx';
+import Footer from './pageComponents/Footer.tsx';
 import extractSection from './scripts/parser.ts';
 import { useLocation } from 'react-router-dom';
 import './Experience.css'

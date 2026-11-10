@@ -1,5 +1,5 @@
 import { useEffect} from 'react';
-import Footer from './Footer';
+import Footer from './pageComponents/Footer.tsx';
 import extractSection from './scripts/parser.ts';
 import Markdown from 'react-markdown';
 import AboutMd from './markdown/About.md?raw';

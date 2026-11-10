@@ -4,7 +4,7 @@ import HomeMd from './markdown/Home.md?raw';
 import extractSection from './scripts/parser.ts';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import Footer from './Footer.tsx';
+import Footer from './pageComponents/Footer.tsx';
 import './Home.css';
 import remarkGfm from 'remark-gfm';
 

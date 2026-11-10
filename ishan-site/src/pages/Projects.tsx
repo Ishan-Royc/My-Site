@@ -1,5 +1,5 @@
 import { Children, isValidElement, useEffect } from 'react';
-import Footer from './Footer.tsx';
+import Footer from './pageComponents/Footer.tsx';
 import ProjectsMD from './markdown/Projects.md?raw';
 import extractSection from './scripts/parser.ts';
 import Markdown from 'react-markdown';

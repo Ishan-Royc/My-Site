@@ -2,7 +2,7 @@ import Markdown from 'react-markdown';
 import CreditsMd from './markdown/Credits.md?raw';
 import extractSection from './scripts/parser.ts';
 import { useEffect } from 'react';
-import Footer from './Footer.tsx';
+import Footer from './pageComponents/Footer.tsx';
 import './Credits.css';
 
 function Credits({lang, setAct}:{lang: string, setAct: (act: number) => void}){

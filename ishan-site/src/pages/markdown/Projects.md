@@ -56,7 +56,7 @@ A website which hosts historical documents online for free public access, mostly
 
 **CI/CD: N/A**
 
-A simple desktop clock app that is based on the *Azumanga Daioh!* wristwatch. It sits on top of all the windows, and can be dragged around the screen to where the user wants it to be.
+A simple desktop clock app that is based on the [*Azumanga Daioh!* wristwatch](https://www.reddit.com/r/azumanga/comments/16n9het/the_watches_finally_came_in_im_in_love_with_these/). It sits on top of all the windows, and can be dragged around the screen to where the user wants it to be.
 
 [![Open on Itch.io](/itch-logo.svg)](https://ishanroyc.itch.io/azumanger-clock-app)
 

@@ -32,7 +32,10 @@ const projects: Record<string, string[]> = {
         'Workspace Manager',
         'John Brown Game'
     ],
-    "hi": [],
+    "hi": [
+        'दिखावा जालथान',
+        'डार्विन नसी जाल'
+    ],
     "bn": []
 }
 
@@ -41,7 +44,9 @@ const contributedProjects: Record<string, string[]> = {
         'Aksharnama',
         'Contributed Project 2'
     ],
-    "hi": [],
+    "hi": [
+        'अक्षरनामा'
+    ],
     "bn": []
 }
 

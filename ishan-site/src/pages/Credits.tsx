@@ -12,7 +12,7 @@ function Credits({lang, setAct}:{lang: string, setAct: (act: number) => void}){
     return (
         <div>
             <div id="credits">
-                <Markdown>{extractSection(CreditsMd, lang)}</Markdown>
+                <Markdown>{CreditsMd}</Markdown>
             </div>
             <div className="filler"></div>
             <Footer />

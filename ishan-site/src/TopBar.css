@@ -14,7 +14,7 @@
 #topBar>.topbar-link{
     padding: 15px 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 21px;
     color: #f1f1f1;
     border-radius: 15px;
     display: flex;
@@ -69,6 +69,7 @@ select:hover {
 label{
     color: #f1f1f1;
     cursor: crosshair;
+    font-size: 19px;
 }
 select{
     background-color: var(--topbar-blue);
@@ -76,10 +77,14 @@ select{
     color: #f1f1f1;
     border-radius: 15px;
     cursor: crosshair;
+    font-size: 19px;
 }
 select:hover{
     border-width: 1px;
-    border-color: #f1f1f1;
+    border-color: var(--topbar-blue);
+}
+select:focus{
+    border-color: var(--topbar-blue);
 }
 .icon{
     width: 25px;

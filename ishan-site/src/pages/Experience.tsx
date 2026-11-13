@@ -35,7 +35,10 @@ const education: Record<string,string[]> = {
         'UMass Amherst',
         'Longmeadow High School'
     ],
-    "hi":[],
+    "hi":[
+        'मैस-महाचटसाल ऐम्हर्स्ट',
+        'लौंगमेडो ऊँचा चटसाल'
+    ],
     "bn":[]
 }
 

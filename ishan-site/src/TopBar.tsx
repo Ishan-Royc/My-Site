@@ -76,7 +76,7 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
                 <div id="leftItem"></div>
                 <div className="ml-auto">
                     <label htmlFor="lang">{languageLabel}: </label>
-                    <select id="lang" name="lang" onChange={(event) => changeLanguage(event.target.value)}>
+                    <select id="lang" name="lang" onChange={(event) => {changeLanguage(event.target.value); event.currentTarget.blur();}}>
                         <option value="en">English</option>
                         <option value="hi">हिंदी</option>
                         <option value="bn">বাংলা</option>

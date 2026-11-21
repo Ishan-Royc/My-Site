@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root{
   --linkedin-blue: oklch(60% .24 240);
 }
@@ -256,4 +258,9 @@
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+.name-en{
+  font-family: 'Shantell Sans';
+  margin-left: 2px;
 }

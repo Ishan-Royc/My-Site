@@ -23,8 +23,8 @@ function RandomizedSkillsList({ children }: { children?: ReactNode }) {
   return <ul className="skillz">{items}</ul>;
 }
 
-const titles: Record<string, string> = {
-    "en":"Hi, I'm Ishan",
+const titles: Record<string, ReactNode> = {
+    "en":<span>Hi, I'm <span className="name-en">Ishan</span></span>,
     "bn":"নমস্কার, আমি ঈশান",
     "hi":"नमस्ते, मैं ईशान हूँ"
 }
@@ -160,7 +160,7 @@ function Home({setAct, lang}:{setAct: (act: number) => void, lang: string}){
                     <h1 className="text-4xl font-bold md:text-5xl">{children}</h1>
                     ),
                     li: ({ children }) =>(
-                        <li className="skill">{children}</li>
+                        <li className="skill slide-in-element">{children}</li>
                     ),
                     ul: RandomizedSkillsList,
                     img: ({ src, alt, ...props }) => (

@@ -45,10 +45,10 @@ function TopBar({ active, language, changeLanguage }: { active: number, language
 
     return (<>
         <motion.div id="topBar" className={`lang-${language}`}>
-            <Link to="/">
+            <Link to="/" className="logoLink">
                 <img
                     className="logo"
-                    src="/old-but-gold-v0-uwp9flcax68g1.jpeg"
+                    src="/logo-normal.svg"
                     alt="Home"
                 />
             </Link>

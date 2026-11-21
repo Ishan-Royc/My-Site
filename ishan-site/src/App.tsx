@@ -19,15 +19,17 @@ function App() {
         <TopBar active={act} language={language} changeLanguage={setLanguage}></TopBar>
       </nav>
       <div id="body" className={`text-${language}`}>
-        <Suspense fallback={<div>Loading page...</div>}>
-          <Routes>
-            <Route path="/" element={<Home setAct={setAct} lang={language} />} />
-            <Route path="/Projects" element={<Projects setAct={setAct} lang={language} />} />
-            <Route path="/Experience" element={<Experience setAct={setAct} lang={language} />} />
-            <Route path="/Credits" element={<Credits setAct={setAct} />} />
-            <Route path="/About" element={<About setAct={setAct} lang={language} />} />
-          </Routes>
-        </Suspense>
+          <Suspense fallback={<div>Loading page...<div className="filler"></div></div>}>
+            <div id="slideInWrapper">
+              <Routes>
+                <Route path="/" element={<Home setAct={setAct} lang={language} />} />
+                <Route path="/Projects" element={<Projects setAct={setAct} lang={language} />} />
+                <Route path="/Experience" element={<Experience setAct={setAct} lang={language} />} />
+                <Route path="/Credits" element={<Credits setAct={setAct} />} />
+                <Route path="/About" element={<About setAct={setAct} lang={language} />} />
+              </Routes>
+            </div>
+          </Suspense>
       </div>
     </Router>
     </>

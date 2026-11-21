@@ -3,6 +3,12 @@ import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
 import remarkGfm from 'remark-gfm';
 
+const processor = remark().use(remarkParse).use(remarkStringify).use(remarkGfm);
+const parsedDocuments = new Map<string, {
+    ast: ReturnType<typeof processor.parse>;
+    sections: Map<string, string>;
+}>();
+
 /**
  * Extracts a markdown section by its heading text.
  * @param {string} markdown - The full markdown string.
@@ -11,10 +17,22 @@ import remarkGfm from 'remark-gfm';
  */
 
 function extractSection(markdown: string, targetHeading: string) {
-    const processor = remark().use(remarkParse).use(remarkStringify).use(remarkGfm);
-    const ast = processor.parse(markdown);
-    const children = ast.children;
     const normalizedTarget = targetHeading.trim().toLowerCase();
+    let parsedDocument = parsedDocuments.get(markdown);
+
+    if (!parsedDocument) {
+        parsedDocument = {
+            ast: processor.parse(markdown),
+            sections: new Map(),
+        };
+        parsedDocuments.set(markdown, parsedDocument);
+    }
+
+    const cachedSection = parsedDocument.sections.get(normalizedTarget);
+    if (cachedSection !== undefined) return cachedSection;
+
+    const ast = parsedDocument.ast;
+    const children = ast.children;
 
     let startIndex = -1;
     let endIndex = children.length;
@@ -51,7 +69,10 @@ function extractSection(markdown: string, targetHeading: string) {
         }
     }
 
-    if (startIndex === -1) return ''; // Heading not found
+    if (startIndex === -1) {
+        parsedDocument.sections.set(normalizedTarget, '');
+        return '';
+    }
 
     const sectionNodes = children
         .slice(startIndex + 1, endIndex)
@@ -60,7 +81,9 @@ function extractSection(markdown: string, targetHeading: string) {
             : node);
     const sectionAst = { ...ast, children: sectionNodes };
 
-    return processor.stringify(sectionAst);
+    const section = processor.stringify(sectionAst);
+    parsedDocument.sections.set(normalizedTarget, section);
+    return section;
 }
 
 export default extractSection;

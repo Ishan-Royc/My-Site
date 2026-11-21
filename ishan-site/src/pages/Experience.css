@@ -1,5 +1,6 @@
 :root{
   --opacity: 0.1;
+  --icon-size: 140px;
 }
 .xp-card{
     border-width: 3px;
@@ -26,7 +27,7 @@ footer{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/bg-img/school.svg") center / contain no-repeat;
+  background: url("/bg-img/school.svg") center / var(--icon-size) var(--icon-size) no-repeat;
   opacity: var(--opacity);
   z-index: 0;
   pointer-events: none;
@@ -46,7 +47,7 @@ footer{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/bg-img/work.svg") center / contain no-repeat;
+  background: url("/bg-img/work.svg") center / var(--icon-size) var(--icon-size) no-repeat;
   opacity: var(--opacity);
   z-index: 0;
   pointer-events: none;
@@ -66,7 +67,7 @@ footer{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/bg-img/research.svg") center / contain no-repeat;
+  background: url("/bg-img/research.svg") center / var(--icon-size) var(--icon-size) no-repeat;
   opacity: var(--opacity);
   z-index: 0;
   pointer-events: none;
@@ -86,7 +87,7 @@ footer{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/bg-img/volunteer.svg") center / contain no-repeat;
+  background: url("/bg-img/volunteer.svg") center / var(--icon-size) var(--icon-size) no-repeat;
   opacity: var(--opacity);
   z-index: 0;
   pointer-events: none;
@@ -106,7 +107,7 @@ footer{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/bg-img/award.svg") center / contain no-repeat;
+  background: url("/bg-img/award.svg") center / var(--icon-size) var(--icon-size) no-repeat;
   opacity: var(--opacity);
   z-index: 0;
   pointer-events: none;

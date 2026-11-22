@@ -25,8 +25,8 @@ function RandomizedSkillsList({ children }: { children?: ReactNode }) {
 
 const titles: Record<string, ReactNode> = {
     "en":<span>Hi, I'm <span className="name-en">Ishan</span></span>,
-    "bn":"নমস্কার, আমি ঈশান",
-    "hi":"नमस्ते, मैं ईशान हूँ"
+    "bn":<span>নমস্কার, আমি <span className="name-bn">ঈশান</span></span>,
+    "hi":<span>नमस्ते, मैं <span className="name-hi">ईशान</span> हूँ</span>
 }
 
 const up_to: Record<string, string> = {

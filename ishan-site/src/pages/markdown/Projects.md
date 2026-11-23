@@ -74,7 +74,7 @@ A simple desktop clock app that is based on the [*Azumanga Daioh!* wristwatch](h
 
 **CI/CD: GitHub Pages**
 
-A web app designed to teach Hindi readers how to read Urdu, and vice-versa. I've improved both the styling of the site (which involved heavy use of Tailwind CSS) and the linguistic accuracy/consistency of its contents.
+A web app designed to teach Hindi readers how to read Urdu, and vice-versa. I've worked on fixing the styling of the website (based heavily on Tailwind CSS), fixing the linguistic accuracy of certain parts of the site, and reworked the routing of the site to use React Router rather than being based solely on re-rendering the body of the page (this made the site easier to navgate and more user-friendly when loading).
 
 [![Github](/GitHub_Invertocat_Black.svg)](https://github.com/Kumar-Aryan-99Pk/akshar-nama) [![Open in a New Tab](/open.svg)](https://kumar-aryan-99pk.github.io/akshar-nama/)
 
